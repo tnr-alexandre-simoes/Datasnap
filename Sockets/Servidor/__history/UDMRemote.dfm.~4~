@@ -1,0 +1,27 @@
+object classCliente: TclassCliente
+  OldCreateOrder = False
+  Height = 329
+  Width = 334
+  object sds_Clientes: TSQLDataSet
+    CommandText = 'select * from clientes where nome like :busca'
+    DbxCommandType = 'Dbx.SQL'
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftString
+        Name = 'busca'
+        ParamType = ptInput
+        Size = 2
+        Value = 'g'
+      end>
+    SQLConnection = FrmServer.conTeste
+    Left = 24
+    Top = 24
+  end
+  object dsp_Clientes: TDataSetProvider
+    DataSet = sds_Clientes
+    Constraints = False
+    Left = 120
+    Top = 24
+  end
+end

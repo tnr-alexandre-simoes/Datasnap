@@ -1,0 +1,25 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 150
+  Width = 293
+  object con_Socket: TSocketConnection
+    ServerGUID = '{380ABD25-C7FE-4CEB-B948-6356BA178CA3}'
+    ServerName = 'servidorTeste.classCliente'
+    Host = '127.0.0.1'
+    Left = 24
+    Top = 16
+  end
+  object cds_Consulta: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dsp_Clientes'
+    RemoteServer = con_Socket
+    Left = 104
+    Top = 16
+  end
+  object ds_Consultas: TDataSource
+    DataSet = cds_Consulta
+    Left = 192
+    Top = 16
+  end
+end

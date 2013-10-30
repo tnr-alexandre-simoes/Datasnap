@@ -1,0 +1,24 @@
+unit uDM;
+
+interface
+
+uses
+  SysUtils, Classes, MConnect, DB, DBClient, SConnect;
+
+type
+  TDataModule1 = class(TDataModule)
+    con_Socket: TSocketConnection;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,15 @@
+object classCliente: TclassCliente
+  OldCreateOrder = False
+  Height = 329
+  Width = 334
+  object sds_Clientes: TSQLDataSet
+    DbxCommandType = 'Dbx.SQL'
+    Params = <>
+    Left = 24
+    Top = 24
+  end
+  object dsp_Clientes: TDataSetProvider
+    Left = 120
+    Top = 24
+  end
+end

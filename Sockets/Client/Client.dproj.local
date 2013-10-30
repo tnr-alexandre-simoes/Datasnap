@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/10/29 10:47:22.929.pas,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\uClientConsulta.pas</Transaction>
+    <Transaction>2013/10/29 10:47:22.929.dfm,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\uClientConsulta.dfm</Transaction>
+    <Transaction>2013/10/29 10:47:33.429.dproj,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\Client.dproj</Transaction>
+    <Transaction>2013/10/29 11:24:39.657.pas,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\Unit1.pas=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\uDM.pas</Transaction>
+    <Transaction>2013/10/29 11:24:39.657.dfm,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\Unit1.dfm=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\uDM.dfm</Transaction>
+    <Transaction>2013/10/29 17:45:16.522.pas,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\Unit2.pas=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\uManutencao.pas</Transaction>
+    <Transaction>2013/10/29 17:45:16.522.dfm,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\Unit2.dfm=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Client\uManutencao.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

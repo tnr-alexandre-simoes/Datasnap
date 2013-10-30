@@ -1,0 +1,117 @@
+object frmManutencao: TfrmManutencao
+  Left = 0
+  Top = 0
+  Caption = 'Formulario de manuten'#231#227'o do cliente'
+  ClientHeight = 256
+  ClientWidth = 363
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl_Botton: TPanel
+    Left = 0
+    Top = 0
+    Width = 363
+    Height = 215
+    Align = alClient
+    TabOrder = 0
+    ExplicitTop = -6
+    ExplicitWidth = 535
+    ExplicitHeight = 313
+    object lbl_1: TLabel
+      Left = 13
+      Top = 10
+      Width = 22
+      Height = 13
+      Caption = 'lbl_1'
+    end
+    object lbl_2: TLabel
+      Left = 13
+      Top = 47
+      Width = 22
+      Height = 13
+      Caption = 'lbl_1'
+    end
+    object lbl_3: TLabel
+      Left = 13
+      Top = 84
+      Width = 22
+      Height = 13
+      Caption = 'lbl_1'
+    end
+    object lbl_4: TLabel
+      Left = 13
+      Top = 122
+      Width = 22
+      Height = 13
+      Caption = 'lbl_1'
+    end
+    object lbl_5: TLabel
+      Left = 13
+      Top = 160
+      Width = 22
+      Height = 13
+      Caption = 'lbl_1'
+    end
+    object db_ClieId: TDBEdit
+      Left = 13
+      Top = 25
+      Width = 65
+      Height = 21
+      DataField = 'id'
+      DataSource = DM.ds_Consulta
+      TabOrder = 0
+    end
+    object dbe_ClienNome: TDBEdit
+      Left = 13
+      Top = 66
+      Width = 340
+      Height = 21
+      DataField = 'nome'
+      DataSource = DM.ds_Consulta
+      TabOrder = 1
+    end
+    object db_ClienEndereco: TDBEdit
+      Left = 13
+      Top = 99
+      Width = 340
+      Height = 21
+      DataField = 'endereco'
+      DataSource = DM.ds_Consulta
+      TabOrder = 2
+    end
+    object dbe_ClienCpf: TDBEdit
+      Left = 13
+      Top = 137
+      Width = 121
+      Height = 21
+      DataField = 'cpf'
+      DataSource = DM.ds_Consulta
+      TabOrder = 3
+    end
+    object dbe_ClienTelefone: TDBEdit
+      Left = 13
+      Top = 175
+      Width = 121
+      Height = 21
+      DataField = 'telefone'
+      DataSource = DM.ds_Consulta
+      TabOrder = 4
+    end
+  end
+  object pnl_1: TPanel
+    Left = 0
+    Top = 215
+    Width = 363
+    Height = 41
+    Align = alBottom
+    TabOrder = 1
+    ExplicitTop = 319
+    ExplicitWidth = 535
+  end
+end

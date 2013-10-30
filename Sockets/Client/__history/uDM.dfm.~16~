@@ -1,0 +1,31 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 150
+  Width = 293
+  object conTeste: TSocketConnection
+    Connected = True
+    ServerGUID = '{A51279DE-9BA9-4BC1-BF47-D0BBBEF116E9}'
+    ServerName = 'servidorTeste.Consulta'
+    Host = '127.0.0.1'
+    Left = 32
+    Top = 16
+  end
+  object cds_Consulta: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftString
+        ParamType = ptUnknown
+        Value = 'prmBusca'
+      end>
+    ProviderName = 'dsp_Consulta'
+    RemoteServer = conTeste
+    Left = 120
+    Top = 16
+  end
+  object ds_Consulta: TDataSource
+    DataSet = cds_Consulta
+    Left = 208
+    Top = 16
+  end
+end

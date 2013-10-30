@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/10/29 10:27:49.232.dproj,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\servidorTeste.dproj</Transaction>
+    <Transaction>2013/10/29 10:29:42.840.pas,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\Unit1.pas=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\UDMRemote.pas</Transaction>
+    <Transaction>2013/10/29 10:29:42.840.dfm,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\Unit1.dfm=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\UDMRemote.dfm</Transaction>
+    <Transaction>2013/10/29 15:57:29.094.pas,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\UDMRemote.pas=</Transaction>
+    <Transaction>2013/10/29 15:57:29.094.dfm,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\UDMRemote.dfm=</Transaction>
+    <Transaction>2013/10/29 16:04:19.742.pas,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\Unit1.pas=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\UDMRemote.pas</Transaction>
+    <Transaction>2013/10/29 16:04:19.742.dfm,C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\Unit1.dfm=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Datasnap\Sockets\Servidor\UDMRemote.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

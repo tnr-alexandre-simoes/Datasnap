@@ -1,0 +1,25 @@
+object classCliente: TclassCliente
+  OldCreateOrder = False
+  Height = 329
+  Width = 334
+  object sds_Clientes: TSQLDataSet
+    CommandText = 'select * from clientes'
+    DbxCommandType = 'Dbx.SQL'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = FrmServer.conTeste
+    Left = 200
+    Top = 112
+  end
+  object dsp_Clientes: TDataSetProvider
+    DataSet = sds_Clientes
+    Constraints = False
+    Left = 120
+    Top = 24
+  end
+  object qry_Clientes: TSQLQuery
+    Params = <>
+    Left = 32
+    Top = 24
+  end
+end

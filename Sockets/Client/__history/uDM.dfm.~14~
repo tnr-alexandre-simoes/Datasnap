@@ -1,0 +1,12 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 150
+  Width = 293
+  object conTeste: TSocketConnection
+    ServerGUID = '{A51279DE-9BA9-4BC1-BF47-D0BBBEF116E9}'
+    ServerName = 'servidorTeste.Consulta'
+    Host = '127.0.0.1'
+    Left = 32
+    Top = 16
+  end
+end

@@ -1,0 +1,112 @@
+unit UServer;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, MidasLib, SwSystem, DB, DBClient, DateUtils,
+  WideStrings, SqlExpr, Menus;
+
+type
+  TFrmServer = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    LbData: TLabel;
+    LbHora: TLabel;
+    LbConexoes: TLabel;
+    Timer1: TTimer;
+    SQLConn: TSQLConnection;
+    BtDerrubarServer: TButton;
+    Label5: TLabel;
+    TrayIcon1: TTrayIcon;
+    PopupMenu1: TPopupMenu;
+    Derrubar1: TMenuItem;
+    Maximizar1: TMenuItem;
+    Minimizar1: TMenuItem;
+    chkRodaEmProducao: TCheckBox;
+    Label6: TLabel;
+    procedure Timer1Timer(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure BtDerrubarServerClick(Sender: TObject);
+  private
+    nConexoes      : Integer;
+  public
+    procedure CriaConexao; stdcall;
+    procedure RemoveConexao; stdcall;
+    function GetModoProducao : Boolean; stdcall;
+  end;
+
+var
+  FrmServer: TFrmServer;
+
+implementation
+
+uses CodeGearApplicationServer2007_TLB, UPrincipal, UCadastro, UConsulta, URelatorios;
+
+{$R *.dfm}
+
+procedure TFrmServer.BtDerrubarServerClick(Sender: TObject);
+begin
+  Halt;
+end;
+
+procedure TFrmServer.CriaConexao;
+begin
+  nConexoes := nConexoes + 1;
+end;
+
+procedure TFrmServer.FormCreate(Sender: TObject);
+var
+  sParams : TStringList;
+begin
+  nConexoes := 0;
+
+  //Verificando o arquivo de conexão do banco
+  if not FileExists(gsAppPath + 'ConexaoBanco.con') then
+  begin
+    raise EDatabaseError.Create('Arquivo de configuração da conexão inexistente');
+    Exit;
+  end;
+
+  sParams := TStringList.Create;
+
+  //Carregando as configurações da conexão com banco
+  try
+    sParams.LoadFromFile(gsAppPath + 'ConexaoBanco.con');
+    SQLConn.Params.Values['Database']       := sParams.Values['Database'];
+    SQLConn.Params.Values['User_Name']      := sParams.Values['User_Name'];
+    SQLConn.Params.Values['Password']       := sParams.Values['Password'];
+    SQLConn.Params.Values['ServerCharSet']  := sParams.Values['ServerCharSet'];
+    SQLConn.Connected := True;
+  except
+    raise EDatabaseError.Create('Erro na coxão com o banco de dados. Possiveis Causas:' + #13 +
+                                '     * Usuário Inválido' + #13 +
+                                '     * Senha Inválida' + #13 +
+                                '     * Caminho do Banco Incorreto');
+    sParams.Free;
+    Exit;
+  end;
+
+  sParams.Free;
+end;
+
+function TFrmServer.GetModoProducao: Boolean;
+begin
+  Result := chkRodaEmProducao.Checked;
+end;
+
+procedure TFrmServer.RemoveConexao;
+begin
+  nConexoes := nConexoes - 1;
+end;
+
+procedure TFrmServer.Timer1Timer(Sender: TObject);
+begin
+  LbData.Caption     := FormatDateTime('dd/mm/yyyy', Date);
+  LbHora.Caption     := FormatDateTime('hh:mm:ss', Time);
+  LbConexoes.Caption := IntToStr(nConexoes);
+end;
+
+end.
